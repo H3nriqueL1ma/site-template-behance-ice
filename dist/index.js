@@ -1,5 +1,11 @@
 "use strict";
 const mediaQuery = window.matchMedia("(max-width: 1060px)");
+function removeBody360() {
+    if (window.innerWidth <= 359) {
+        document.body.remove();
+    }
+}
+removeBody360();
 function updateImagesClasses() {
     const images = document.querySelectorAll("#carouselExample .image-container img");
     images.forEach(image => {
