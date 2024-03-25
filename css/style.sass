@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap")
+
+@import "../node_modules/bootstrap/scss/bootstrap-custom.scss"
+    
+@mixin transparent-button-design
+    cursor: pointer
+    background-color: transparent
+    border: none
+
+@mixin font-open-sans
+    font-family: "Open-Sans", sans-serif
+    font-weight: 700
+    color: white
+    
+@mixin title-design
+    font-weight: 800
+    color: white
+  
+body
+    background-size: 100%
+    background-color: rgb(20,107,137)
+    background-image: url("../img/Fundo-pag-iceberg.png")
+    background-repeat: no-repeat
+
+    .white-color-open-sans
+        @include font-open-sans
+        margin: auto
+        font-size: 9pt
+
+    #menu
+        max-width: 1366px
+        margin: auto
+
+        #menu-navbar
+            display: flex
+            flex-direction: column
+
+            #name
+                font-family: "Open-Sans", sans-serif
+
+                #title-page
+                    @include title-design
+                    font-size: 11pt
+                    margin: 7.7% 2.5%
+                    
+                    span
+                        color: rgb(255, 208, 0)
+
+            #options
+                justify-content: center
+
+                #navbarSupportedContent
+                    flex-grow: 0
+                    margin: 1% 0
+
+                    ul
+                        li + li
+                            margin-left: 20px
+
+
+
+    #site-body
+        margin: auto
+        margin-top: 10.8%
+
+        #text-title-and-language
+            margin-bottom: 850px
+
+            #title
+                text-align: center
+                text-shadow: 1px 5px 7px rgb(100, 100, 100)
+
+                h2
+                    font-family: "Open-Sans", sans-serif
+                    font-weight: 700
+                    color: rgb(255, 208, 0)
+                    font-size: 7pt
+
+                h1    
+                    font-family: "Madimi One", sans-serif
+                    color: white
+                    font-size: 21pt
+                    font-weight: 300
+
+            #language-buttons
+                display: grid
+                justify-content: left
+                margin-left: 9.5%
+                margin-top: -3.4%
+
+                button
+                    @include transparent-button-design
+                    @include font-open-sans
+                    font-size: 8pt
+                    rotate: -90deg
+                    margin: 30% 0%
+                    transition: 0.15s
+
+                    &:hover
+                        color: black
+                
+        #ice
+            .ice-content
+                margin: auto
+                margin-top: 45%
+                text-align: center
+                font-family: "Madimi One", sans-serif
+                max-width: 650px
+                                
+                #name
+                    color: white
+                    font-size: 22pt
+
+                #description-ice
+                    font-family: "Open-Sans", sans-serif
+                    color: rgba(211, 209, 209, 0.9)
+                    font-size: 9pt
+
+                #video-ice
+                    margin-top: 7%
+
+                    iframe
+                        border: 4px solid black
+                        box-shadow: 1px 1px 25px black
+
+        #contact
+            background: url("../img/Barco.png") no-repeat
+            background-size: 125%
+            background-position-y: 55%
+            background-position-x: 55%
+            margin-top: 38%
+            height: 1700px
+            padding-top: 20px
+            font-family: "Open-Sans", sans-serif
+            color: white
+            margin-bottom: -23%
+
+            #contact-title, #form
+                max-width: 1366px
+                margin: auto
+
+            #contact-title
+                @include title-design
+                text-align: center
+                font-size: 33pt
+                margin-top: 15%
+
+            #centralizer-form-info
+                display: flex
+                flex-direction: row
+
+                #form
+                    width: 100%
+                    margin-top: 6.5%
+
+                    #form-body
+                        max-width: 570px
+                        padding-top: 25px
+                        text-align: center
+                        background-color: rgb(20,107,137)
+                        margin: 0 0 0 21%
+                        box-shadow: -7px 5px 4px 0px rgba(0, 0, 0, 0.3)
+
+                        #centralizer
+                            margin-top: 50px
+                        
+                            h1
+                                font-weight: 700
+                                font-size: 43pt
+
+                            form
+                                margin: 12% 12%
+
+                                .spacing
+                                    margin: 7% 0
+
+                                .form-size
+                                    max-width: 370px
+                                    background: none
+                                    border: none
+                                    border-bottom: 3px solid rgba(0, 0, 0, 0.2)
+                                    border-radius: 0px
+                                    color: white
+                                    font-size: 14pt
+
+                                #button
+                                    margin: 50px auto
+                                    background-color: rgb(20,107,137)
+                                    border: none
+                                    border-radius: 0px
+                                    box-shadow: 0 4px 3px #252525
+                                    width: 310px
+                                    height: 45px
+                                    font-size: 14pt
+                                    transition: 0.2s
+
+                                    &:hover
+                                        background-color: rgb(18, 94, 119)
+
+                                    &:active
+                                        background-color: rgb(18, 94, 119)
+                                        box-shadow: 0 0px 4px black
+                                        transform: translateY(2px)
+                                        
+                                textarea
+                                    resize: none
+
+                #informations
+                    text-align: center
+                    width: 100%
+                    margin-top: -16%
+
+                    h1
+                        font-weight: 700
+                        font-size: 38pt
+                        margin-bottom: 8%
+
+                    h2
+                        font-weight: 600
+                        font-size: 20pt
+                        line-height: 13px
+
+                    p
+                        font-weight: 100
+                        color: rgba(255, 255, 255, 0.7)
+                        font-size: 13pt
+                        line-height: 21px
+
+                    #centralizer-info
+                        margin: 50% auto
+                        width: 450px
+                        height: 600px
+
+                        #centralizer-2
+                            position: relative
+                            top: 45%
+                            transform: translateY(-50%)
+
+                            .div-info
+                                margin-bottom: 17%
+
+                            #div-info-1
+                                margin-bottom: 25%
+
+        #contact-title-gallerie
+            @include title-design
+            text-align: center
+            font-size: 33pt
+            margin-top: 15%
+            margin-bottom: 10%
+
+        #carouselExample
+            margin-bottom: 13%
+
+            .image-container
+                max-height: 800px
+                padding: 20px 0
+
+            .shadow-custom
+                box-shadow: 0px 0px 20px black
+
+    #footer
+        font-family: "Open-Sans", sans-serif
+        height: 200px
+
+        #centralizer
+            margin: auto
+            width: 80%   
+
+            hr
+                border: 2px solid black
+                opacity: 1
+
+            #button
+                text-align: center
+                margin-bottom: 4%
+
+                .button
+                    border: 1px solid black
+                    background: none
+                    border-radius: 0px
+                    color: black
+                    width: 250px
+                    padding: 12px
+                    transition: all 0.5s
+                    font-size: 10pt
+                    font-weight: 500
+
+                    span
+                        display: inline-block
+                        position: relative
+                        transition: 0.5s
+
+                    span:after
+                        content: '→'
+                        position: absolute
+                        opacity: 0
+                        top: 0
+                        right: -20px
+                        transition: 0.5s
+
+                    &:hover span
+                        padding-right: 25px
+
+                    &:hover span:after
+                        opacity: 1
+                        right: 0
+
+            #text
+                margin-top: 4.5%
+   
+                #rights
+                    font-size: 9pt
+                    float: left
+                    font-weight: 600
+
+                #pages-min
+                    display: flex
+                    flex-direction: row
+                    float: right
+                    margin-right: 2%
+                    margin-top: -0.5%
+                    z-index: 2
+
+                    button
+                        font-family: "Open-Sans", sans-serif
+                        font-size: 9pt
+                        font-weight: 500
+                        border: none
+                        background: none
+                        cursor: pointer
+
+                    div + div
+                        margin-left: 60px
+
+                #title
+                    @include title-design
+                    font-size: 19pt
+                    position: absolute
+                    width: 80%
+                    text-align: center
+                    z-index: 1
+                    
+                    span
+                        color: rgb(255, 208, 0)
