@@ -167,13 +167,13 @@ function switchToEnglish() {
             <div id="carouselExample" class="carousel slide height">
                 <div class="carousel-inner height">
                 <div class="carousel-item image-container active">
-                    <img id="image-cont" src="/img/geleira.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
+                    <img id="image-cont" src="https://h3nriquel1ma.github.io/site-template-behance-ice/img/geleira.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
                 </div>
                 <div class="carousel-item image-container">
-                    <img id="image-cont" src="/img/urso.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
+                    <img id="image-cont" src="https://h3nriquel1ma.github.io/site-template-behance-ice/img/urso.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
                 </div>
                 <div class="carousel-item image-container">
-                    <img id="image-cont" src="/img/navio.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
+                    <img id="image-cont" src="https://h3nriquel1ma.github.io/site-template-behance-ice/img/navio.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
                 </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -350,13 +350,13 @@ function switchToPortuguese() {
             <div id="carouselExample" class="carousel slide height">
                 <div class="carousel-inner height">
                 <div class="carousel-item image-container active">
-                    <img id="image-cont" src="/img/geleira.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
+                    <img id="image-cont" src="https://h3nriquel1ma.github.io/site-template-behance-ice/img/geleira.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
                 </div>
                 <div class="carousel-item image-container">
-                    <img id="image-cont" src="/img/urso.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
+                    <img id="image-cont" src="https://h3nriquel1ma.github.io/site-template-behance-ice/img/urso.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
                 </div>
                 <div class="carousel-item image-container">
-                    <img id="image-cont" src="/img/navio.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
+                    <img id="image-cont" src="https://h3nriquel1ma.github.io/site-template-behance-ice/img/navio.jpg" class="d-block w-25 m-auto shadow-custom" alt="...">
                 </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
