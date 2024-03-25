@@ -267,7 +267,7 @@
     font-size: 10pt !important;
   }
   #menu #menu-navbar #options #navbarSupportedContent {
-    margin: 1% 0 1% 30% !important;
+    margin: 1% 0 1% 28% !important;
   }
   #video-ice iframe {
     max-width: 345px;
@@ -298,11 +298,14 @@
   }
 }
 @media screen and (max-width: 414px) {
+  .white-color-open-sans {
+    font-size: 9pt !important;
+  }
+  #menu #menu-navbar #options #navbarSupportedContent {
+    margin: 1% 0 1% 24% !important;
+  }
   body {
     max-width: 414px;
-  }
-  .white-color-open-sans {
-    font-size: 12pt !important;
   }
   #navbar-navigation {
     width: 385px;
