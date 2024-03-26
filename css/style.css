@@ -2287,7 +2287,7 @@ body #site-body #ice .ice-content #name {
 body #site-body #ice .ice-content #description-ice {
   font-family: "Open-Sans", sans-serif;
   color: rgba(211, 209, 209, 0.9);
-  font-size: 9pt;
+  font-size: 10pt;
 }
 body #site-body #ice .ice-content #video-ice {
   margin-top: 7%;
@@ -2481,6 +2481,20 @@ body #footer #centralizer #button .button:hover span:after {
   opacity: 1;
   right: 0;
 }
+body #footer #centralizer #title {
+  font-weight: 800;
+  color: white;
+  font-size: 19pt;
+  position: absolute;
+  margin-top: 7%;
+  padding-bottom: 2%;
+  width: 80%;
+  text-align: center;
+  z-index: 1;
+}
+body #footer #centralizer #title span {
+  color: rgb(255, 208, 0);
+}
 body #footer #centralizer #text {
   margin-top: 4.5%;
 }
@@ -2488,35 +2502,20 @@ body #footer #centralizer #text #rights {
   font-size: 9pt;
   float: left;
   font-weight: 600;
+  color: rgb(28, 28, 28);
 }
 body #footer #centralizer #text #pages-min {
-  display: flex;
-  flex-direction: row;
-  float: right;
-  margin-right: 2%;
-  margin-top: -0.5%;
-  z-index: 2;
-}
-body #footer #centralizer #text #pages-min button {
   font-family: "Open-Sans", sans-serif;
   font-size: 9pt;
-  font-weight: 500;
-  border: none;
-  background: none;
-  cursor: pointer;
+  float: right;
+  margin-right: 1%;
+  margin-top: -0.5%;
+  z-index: 3;
 }
-body #footer #centralizer #text #pages-min div + div {
-  margin-left: 60px;
+body #footer #centralizer #text #pages-min li + li {
+  margin-left: 30px;
 }
-body #footer #centralizer #text #title {
-  font-weight: 800;
-  color: white;
-  font-size: 19pt;
-  position: absolute;
-  width: 80%;
-  text-align: center;
-  z-index: 1;
-}
-body #footer #centralizer #text #title span {
-  color: rgb(255, 208, 0);
+body #footer #centralizer #text #pages-min a {
+  color: rgb(28, 28, 28);
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

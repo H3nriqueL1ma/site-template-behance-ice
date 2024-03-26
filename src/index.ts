@@ -1,4 +1,5 @@
 const mediaQuery: MediaQueryList = window.matchMedia("(max-width: 1060px)")
+const mediaQuery700: MediaQueryList = window.matchMedia("(max-width: 700px)")
 
 function removeBody360() {
     if (window.innerWidth <= 359) {
@@ -8,6 +9,17 @@ function removeBody360() {
 
 removeBody360()
 
+function justifyOptionsFooter() {
+    const options: HTMLUListElement = document.querySelector("#pages-min")
+    if (mediaQuery700.matches) {
+        options.classList.remove("justify-content-end")
+        options.classList.add("justify-content-center")
+    } else {
+        options.classList.remove("justify-content-center")
+        options.classList.add("justify-content-end")
+    }
+}
+ 
 function updateImagesClasses() {
     const images: NodeListOf<HTMLImageElement> = document.querySelectorAll("#carouselExample .image-container img")
     images.forEach(image => {
@@ -25,8 +37,16 @@ function mediaQueryChange(mediaquery: MediaQueryList) {
     updateImagesClasses();
 }
 
+function mediaQueryChange700(mediaquery: MediaQueryList) {
+    justifyOptionsFooter();
+}
+
 mediaQuery.addEventListener("change", () => {
     mediaQueryChange(mediaQuery)
+})
+
+mediaQuery700.addEventListener("change", () => {
+    mediaQueryChange700(mediaQuery700)
 })
 
 const body: HTMLBodyElement = document.querySelector("body")
@@ -35,7 +55,7 @@ const pt_Button: HTMLButtonElement = document.querySelector("#pt-br")
 
 function switchToEnglish() {
     body.innerHTML = `
-            <header id="menu">
+        <header id="menu">
             <nav class="navbar navbar-expand-lg" id="menu-navbar">
                 <div class="container-fluid" id="name">
                     <a class="navbar-brand" id="title-page" href="#">GOTO <span>ANTARCTIC.</span></a>
@@ -201,19 +221,26 @@ function switchToEnglish() {
                     <button class="btn btn-secondary button"><span>BOOK NOW </span></button>
                 </div>
                 <hr>
+                <div id="title">GOTO <span>ANTARCTIC.</span></div>
                 <div id="text">
                     <div id="rights"><p>All rights reserved</p></div>
-                    <div id="title">GOTO <span>ANTARCTIC.</span></div>
-                    <div id="pages-min">
-                        <div><button>Privacy</button></div>
-                        <div><button>Disclaimer</button></div>
-                        <div><button>Contact</button></div>
-                    </div>
+                    <ul id="pages-min" class="nav justify-content-end">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Disclaimer</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
     `
     updateImagesClasses()
+    justifyOptionsFooter()
 }
 
 function switchToPortuguese() {
@@ -384,19 +411,26 @@ function switchToPortuguese() {
                     <button class="btn btn-secondary button"><span>AGENDE AGORA </span></button>
                 </div>
                 <hr>
+                <div id="title">VÁ PARA A <span>ANTÁRTIDA.</span></div>
                 <div id="text">
                     <div id="rights"><p>Todos os direitos reservado</p></div>
-                    <div id="title">VÁ PARA A <span>ANTÁRTIDA.</span></div>
-                    <div id="pages-min">
-                        <div><button>Privacidade</button></div>
-                        <div><button>Aviso Legal</button></div>
-                        <div><button>Contato</button></div>
-                    </div>
+                    <ul id="pages-min" class="nav justify-content-end">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Privacidade</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Aviso Legal</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
     `
     updateImagesClasses()
+    justifyOptionsFooter()
 }
 
 body.addEventListener("click", (event) => {
@@ -409,3 +443,4 @@ body.addEventListener("click", (event) => {
 })
 
 mediaQueryChange(mediaQuery)
+mediaQueryChange700(mediaQuery700)
